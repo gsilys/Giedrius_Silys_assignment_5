@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Giedrius_Silys_assignment_5
+namespace Giedrius_Silys
 {
     public class Startup
     {
@@ -28,10 +28,13 @@ namespace Giedrius_Silys_assignment_5
                 app.UseDeveloperExceptionPage();
             }
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            //app.Run(async (context) =>
+            //{
+            // await context.Response.WriteAsync("Hello World!");
+
+            // });
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
         }
     }
 }

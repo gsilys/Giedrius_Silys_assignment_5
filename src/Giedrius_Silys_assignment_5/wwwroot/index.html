@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+    <script>
+
+  $( function() {
+
+    $( "#datepicker" ).datepicker();
+
+  } );
+
+
+    </script>
+
+
+</head>
+<body>
+    <div id="page-content">
+        <div id="sidebar">
+            <img src="https://image.freepik.com/free-photo/nature-design-with-bokeh-effect_1048-1882.jpg" alt="Smiley face" height="150">
+            Something to consider..<br><br>
+            <div style="padding-left: 50px;">
+                <a href="#">Home</a><br>
+                <a href="#">About</a><br>
+                <a href="#">Contact</a>
+            </div>
+
+        </div>
+
+        <div id="content" onmouseover="changeColor('content'); return false;" onmouseout="changeColorBack('content'); return false;">
+            <h1>Finland</h1>
+            <p>This will be a fun website soon!</p>
+            <form id="form1">
+                <div> Date: <br><input type="text" name="field1" value=""  id="datepicker"/></div>
+                <div>Location:<br> <input type="text" name="field2" value="" /></div>
+                <div><input type="submit" name="Submit" value="Submit" /></div>
+            </form>
+
+        </div>
+
+        <div id="footer">&copy; 2016 Mikpoli Ltd</div>
+    </div>
+</body>
+</html>
+
+<script>
+function changeColor(id)
+{
+  document.getElementById(id).style.backgroundColor = "red"; 
+}
+function changeColorBack(id) {
+    document.getElementById(id).style.backgroundColor = "grey";
+}
+
+</script>
+
